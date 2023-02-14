@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8D4867ACE5BE3D58E08A9803 /* Pods_NiceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF71F48FB88902DD4508FC04 /* Pods_NiceApp.framework */; };
+		F013352229978BA100A97DAE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF18AA29964A9D00FCF8A3 /* MainViewController.swift */; };
+		F01335242997943200A97DAE /* 9648-apple-logo-annimation.json in Resources */ = {isa = PBXBuildFile; fileRef = F01335232997943200A97DAE /* 9648-apple-logo-annimation.json */; };
 		F0FF18A729964A9D00FCF8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF18A629964A9D00FCF8A3 /* AppDelegate.swift */; };
 		F0FF18A929964A9D00FCF8A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF18A829964A9D00FCF8A3 /* SceneDelegate.swift */; };
-		F0FF18AE29964A9D00FCF8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FF18AC29964A9D00FCF8A3 /* Main.storyboard */; };
 		F0FF18B029964A9E00FCF8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FF18AF29964A9E00FCF8A3 /* Assets.xcassets */; };
 		F0FF18B329964A9E00FCF8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FF18B129964A9E00FCF8A3 /* LaunchScreen.storyboard */; };
-		F0FF18BE2996566900FCF8A3 /* 9648-apple-logo-annimation.json in Resources */ = {isa = PBXBuildFile; fileRef = F0FF18BD2996566900FCF8A3 /* 9648-apple-logo-annimation.json */; };
-		F0FF18BF29965E0C00FCF8A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FF18AA29964A9D00FCF8A3 /* MainViewController.swift */; };
+		F0FF18C0299789FC00FCF8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FF18AC29964A9D00FCF8A3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70107381FA0FD3C1968A93A0 /* Pods-NiceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.debug.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D3B43A52ACC8293014CAB55A /* Pods-NiceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.release.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.release.xcconfig"; sourceTree = "<group>"; };
 		DF71F48FB88902DD4508FC04 /* Pods_NiceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01335232997943200A97DAE /* 9648-apple-logo-annimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "9648-apple-logo-annimation.json"; path = "../../../../../Downloads/9648-apple-logo-annimation.json"; sourceTree = "<group>"; };
 		F0FF18A329964A9D00FCF8A3 /* NiceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FF18A629964A9D00FCF8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0FF18A829964A9D00FCF8A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		F0FF18AF29964A9E00FCF8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0FF18B229964A9E00FCF8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0FF18B429964A9E00FCF8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0FF18BD2996566900FCF8A3 /* 9648-apple-logo-annimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "9648-apple-logo-annimation.json"; path = "../../../../../Downloads/9648-apple-logo-annimation.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		F0FF18A529964A9D00FCF8A3 /* NiceApp */ = {
 			isa = PBXGroup;
 			children = (
-				F0FF18BD2996566900FCF8A3 /* 9648-apple-logo-annimation.json */,
+				F01335232997943200A97DAE /* 9648-apple-logo-annimation.json */,
 				F0FF18BA29964AB400FCF8A3 /* ViewControllers */,
 				F0FF18A629964A9D00FCF8A3 /* AppDelegate.swift */,
 				F0FF18A829964A9D00FCF8A3 /* SceneDelegate.swift */,
@@ -164,8 +164,8 @@
 			files = (
 				F0FF18B329964A9E00FCF8A3 /* LaunchScreen.storyboard in Resources */,
 				F0FF18B029964A9E00FCF8A3 /* Assets.xcassets in Resources */,
-				F0FF18BE2996566900FCF8A3 /* 9648-apple-logo-annimation.json in Resources */,
-				F0FF18AE29964A9D00FCF8A3 /* Main.storyboard in Resources */,
+				F01335242997943200A97DAE /* 9648-apple-logo-annimation.json in Resources */,
+				F0FF18C0299789FC00FCF8A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0FF18BF29965E0C00FCF8A3 /* MainViewController.swift in Sources */,
+				F013352229978BA100A97DAE /* MainViewController.swift in Sources */,
 				F0FF18A729964A9D00FCF8A3 /* AppDelegate.swift in Sources */,
 				F0FF18A929964A9D00FCF8A3 /* SceneDelegate.swift in Sources */,
 			);

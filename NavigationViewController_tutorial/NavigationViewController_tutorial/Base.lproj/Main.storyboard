@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0kT-Ac-0bi">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="NavigationViewController_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRv-D2-O6y" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dOY-gn-gSa">
+                                        <rect key="frame" x="0.0" y="1" width="393" height="713.66666666666663"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dOY-gn-gSa" firstAttribute="top" secondItem="vRv-D2-O6y" secondAttribute="top" id="1FC-nq-KH6"/>
+                                    <constraint firstItem="dOY-gn-gSa" firstAttribute="leading" secondItem="vRv-D2-O6y" secondAttribute="leading" id="Xga-iC-XyR"/>
+                                    <constraint firstAttribute="bottom" secondItem="dOY-gn-gSa" secondAttribute="bottom" id="rYP-CC-udL"/>
+                                    <constraint firstAttribute="trailing" secondItem="dOY-gn-gSa" secondAttribute="trailing" id="zdF-xO-6aj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vRv-D2-O6y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4DT-AM-sWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vRv-D2-O6y" secondAttribute="trailing" id="8k7-iM-5TV"/>
+                            <constraint firstItem="vRv-D2-O6y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DjT-YP-PpG"/>
+                            <constraint firstItem="vRv-D2-O6y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E2H-8c-vrs"/>
+                            <constraint firstItem="vRv-D2-O6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MTw-YQ-Hlg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vRv-D2-O6y" secondAttribute="bottom" id="THA-SQ-Wei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vRv-D2-O6y" secondAttribute="bottom" id="uOb-Qh-yQt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s5t-BA-MBc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.94656488549617" y="-14.084507042253522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CoF-RN-Xmr">
+            <objects>
+                <navigationController id="0kT-Ac-0bi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NN2-1d-DZV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ceu-2M-Koz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMe-wb-D9D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="-14"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

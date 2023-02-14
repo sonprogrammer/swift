@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 
+
 class MainViewController: UIViewController {
 
     let titleLabel: UILabel = {
@@ -21,9 +22,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    
-    
-    let animationView: AnimationView = {
+    let animationView: AnnimationView = {
         let animView = AnimationView(name: "9648-apple-logo-annimation")
         animView.frame = CGRect(x:0, y:0, width: 400, height:400)
         animView.contentMode = .scaleAspectFill
@@ -45,11 +44,15 @@ class MainViewController: UIViewController {
         animationView.play{(finish) in
             print("애니메이션이 끝남")
             
-            view.addSubview(titleLabel)
+            self.view.backgroundColor = .white
+            
+            self.animationView.removeFromSuperview()
+            
+            self.view.addSubview(self.titleLabel)
      
-            titleLabel.translatesAutoresizingMaskIntoConstraints = false
-            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+            self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+            self.titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            self.titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         }
         view.addSubview(animationView)
         animationView.center = view.center
