@@ -14,6 +14,7 @@
 		F003FB2A29A4BC6C00D4E30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F003FB2929A4BC6C00D4E30C /* Assets.xcassets */; };
 		F003FB2D29A4BC6C00D4E30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F003FB2B29A4BC6C00D4E30C /* LaunchScreen.storyboard */; };
 		F003FB3529A4C08D00D4E30C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003FB3429A4C08D00D4E30C /* RegisterViewController.swift */; };
+		F0D332D129A742A20047FE72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D332D029A742A20047FE72 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F003FB2C29A4BC6C00D4E30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F003FB2E29A4BC6C00D4E30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F003FB3429A4C08D00D4E30C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F0D332D029A742A20047FE72 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				F003FB2429A4BC6B00D4E30C /* LoginViewController.swift */,
 				F003FB3429A4C08D00D4E30C /* RegisterViewController.swift */,
+				F0D332D029A742A20047FE72 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				F003FB2129A4BC6B00D4E30C /* AppDelegate.swift in Sources */,
 				F003FB2329A4BC6B00D4E30C /* SceneDelegate.swift in Sources */,
 				F003FB3529A4C08D00D4E30C /* RegisterViewController.swift in Sources */,
+				F0D332D129A742A20047FE72 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
