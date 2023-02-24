@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXs-pG-z9C" userLabel="ContentView">
-                                <rect key="frame" x="71.666666666666686" y="276" width="250" height="300"/>
+                                <rect key="frame" x="71.666666666666686" y="226" width="250" height="400"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_img" translatesAutoresizingMaskIntoConstraints="NO" id="F44-zK-W0M">
                                         <rect key="frame" x="64.999999999999986" y="20" width="120.00000000000001" height="120"/>
@@ -36,45 +36,83 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 손영진입니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-wY-LDe">
-                                        <rect key="frame" x="39.333333333333329" y="167" width="171" height="21"/>
+                                        <rect key="frame" x="39.333333333333329" y="167" width="171" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구독 좋아요! 알림설정~~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Zt-SIv">
-                                        <rect key="frame" x="41.333333333333329" y="196" width="167" height="21"/>
+                                        <rect key="frame" x="41.666666666666657" y="195.33333333333331" width="166.66666666666666" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-F8-2kg">
-                                        <rect key="frame" x="64.999999999999986" y="262" width="120.00000000000001" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F3n-Bq-hbk">
+                                        <rect key="frame" x="64.999999999999986" y="262" width="120.00000000000001" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qC-QK-3sJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Gs7-wa-bxs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="영진 블로그 가기!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="blogBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TG8-96-Aka"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-vr-qwr">
+                                                <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="EAj-02-UOx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="오픈카톡방가기">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onOpenChatBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q8u-IT-25d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-F8-2kg">
+                                                <rect key="frame" x="0.0" y="80" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="mHD-EM-Pva"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="구독하러가기">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSubscribeBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Et-bM-ylE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="mHD-EM-Pva"/>
+                                            <constraint firstAttribute="width" constant="120" id="Jo1-Ow-Edw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="구독하러가기">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onSubscribeBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Et-bM-ylE"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="F44-zK-W0M" firstAttribute="top" secondItem="BXs-pG-z9C" secondAttribute="top" constant="20" id="0Ia-Du-hMx"/>
                                     <constraint firstItem="KfO-Zt-SIv" firstAttribute="centerX" secondItem="BXs-pG-z9C" secondAttribute="centerX" id="0zj-8G-wBI"/>
                                     <constraint firstItem="KfO-Zt-SIv" firstAttribute="top" secondItem="DFS-wY-LDe" secondAttribute="bottom" constant="8" id="1cK-XR-ymz"/>
-                                    <constraint firstAttribute="height" constant="300" id="2vK-Gd-wB1"/>
-                                    <constraint firstAttribute="bottom" secondItem="nLd-F8-2kg" secondAttribute="bottom" constant="8" id="QCI-H2-9JG"/>
+                                    <constraint firstAttribute="height" constant="400" id="2vK-Gd-wB1"/>
+                                    <constraint firstItem="F3n-Bq-hbk" firstAttribute="centerX" secondItem="BXs-pG-z9C" secondAttribute="centerX" id="LS3-zN-sWN"/>
                                     <constraint firstItem="F44-zK-W0M" firstAttribute="centerX" secondItem="BXs-pG-z9C" secondAttribute="centerX" id="Re3-5v-87X"/>
                                     <constraint firstAttribute="width" constant="250" id="Yx9-bC-TYk"/>
                                     <constraint firstItem="DFS-wY-LDe" firstAttribute="top" secondItem="F44-zK-W0M" secondAttribute="bottom" constant="27" id="ZF5-RF-GEs"/>
+                                    <constraint firstAttribute="bottom" secondItem="F3n-Bq-hbk" secondAttribute="bottom" constant="28" id="ixy-9u-LUR"/>
                                     <constraint firstItem="DFS-wY-LDe" firstAttribute="centerX" secondItem="BXs-pG-z9C" secondAttribute="centerX" id="mD7-Cl-XDe"/>
-                                    <constraint firstItem="nLd-F8-2kg" firstAttribute="centerX" secondItem="BXs-pG-z9C" secondAttribute="centerX" id="rpq-hn-EKz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -92,6 +130,8 @@
                     <connections>
                         <outlet property="ContentView" destination="BXs-pG-z9C" id="HxV-Ni-yFY"/>
                         <outlet property="bgBtn" destination="01T-Z0-c7H" id="3ah-Xw-3vn"/>
+                        <outlet property="blogBtn" destination="4qC-QK-3sJ" id="G4X-Hj-wnz"/>
+                        <outlet property="openChatBtn" destination="PXN-vr-qwr" id="9J3-zH-UGv"/>
                         <outlet property="subscribeBtn" destination="nLd-F8-2kg" id="FFx-zt-asL"/>
                     </connections>
                 </viewController>
@@ -104,6 +144,12 @@
         <image name="my_img" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

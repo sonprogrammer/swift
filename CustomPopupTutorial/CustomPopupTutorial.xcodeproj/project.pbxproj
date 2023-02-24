@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0467CC229A8A37700AAEA28 /* PopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0467CC129A8A37700AAEA28 /* PopUpDelegate.swift */; };
 		F0D3332729A765B40047FE72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3332629A765B40047FE72 /* AppDelegate.swift */; };
 		F0D3332929A765B40047FE72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3332829A765B40047FE72 /* SceneDelegate.swift */; };
 		F0D3332B29A765B40047FE72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3332A29A765B40047FE72 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0467CC129A8A37700AAEA28 /* PopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDelegate.swift; sourceTree = "<group>"; };
 		F0D3332329A765B40047FE72 /* CustomPopupTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopupTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D3332629A765B40047FE72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0D3332829A765B40047FE72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				F0D3333429A765B70047FE72 /* Info.plist */,
 				F0D3333C29A766B50047FE72 /* PopUp.storyboard */,
 				F0D3333E29A76C390047FE72 /* CustomPopUpViewController.swift */,
+				F0467CC129A8A37700AAEA28 /* PopUpDelegate.swift */,
 			);
 			path = CustomPopupTutorial;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0467CC229A8A37700AAEA28 /* PopUpDelegate.swift in Sources */,
 				F0D3333F29A76C390047FE72 /* CustomPopUpViewController.swift in Sources */,
 				F0D3332B29A765B40047FE72 /* ViewController.swift in Sources */,
 				F0D3332729A765B40047FE72 /* AppDelegate.swift in Sources */,
