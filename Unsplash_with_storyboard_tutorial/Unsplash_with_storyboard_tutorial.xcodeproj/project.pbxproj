@@ -16,6 +16,8 @@
 		F002447129AC8C010055B580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F002446F29AC8C010055B580 /* LaunchScreen.storyboard */; };
 		F002447929AC8E620055B580 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002447829AC8E620055B580 /* UserListVC.swift */; };
 		F002447B29AC8EA00055B580 /* PhotoCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002447A29AC8EA00055B580 /* PhotoCollectionVC.swift */; };
+		F002447F29B09D680055B580 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002447E29B09D680055B580 /* Constants.swift */; };
+		F002448129B09EA70055B580 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002448029B09EA70055B580 /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F002447229AC8C010055B580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F002447829AC8E620055B580 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
 		F002447A29AC8EA00055B580 /* PhotoCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionVC.swift; sourceTree = "<group>"; };
+		F002447E29B09D680055B580 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F002448029B09EA70055B580 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		F002445829AC8BFF0055B580 = {
 			isa = PBXGroup;
 			children = (
+				F002447D29B09D460055B580 /* Utils */,
 				F002446329AC8BFF0055B580 /* Unsplash_with_storyboard_tutorial */,
 				F002446229AC8BFF0055B580 /* Products */,
 				59BB3EE5AB07D0AB52DADCAC /* Pods */,
@@ -101,8 +106,17 @@
 				F002446829AC8BFF0055B580 /* HomeVC.swift */,
 				F002447829AC8E620055B580 /* UserListVC.swift */,
 				F002447A29AC8EA00055B580 /* PhotoCollectionVC.swift */,
+				F002448029B09EA70055B580 /* BaseVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F002447D29B09D460055B580 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F002447E29B09D680055B580 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,8 @@
 				F002446729AC8BFF0055B580 /* SceneDelegate.swift in Sources */,
 				F002447929AC8E620055B580 /* UserListVC.swift in Sources */,
 				F002447B29AC8EA00055B580 /* PhotoCollectionVC.swift in Sources */,
+				F002448129B09EA70055B580 /* BaseVC.swift in Sources */,
+				F002447F29B09D680055B580 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

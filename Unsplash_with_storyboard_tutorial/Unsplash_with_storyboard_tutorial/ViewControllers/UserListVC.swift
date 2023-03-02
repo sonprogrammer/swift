@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserListVC : UIViewController{
+class UserListVC : BaseVC{  //BaseVC를 상속받음
     
     override func viewDidLoad() {
         super.viewDidLoad()
