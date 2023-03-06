@@ -55,18 +55,20 @@
                                         <rect key="frame" x="177" y="309" width="20" height="20"/>
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
-                                    <searchBar contentMode="redraw" ambiguous="YES" placeholder="사진 키워드 입력" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-yP-11Y" userLabel="SearchBar">
-                                        <rect key="frame" x="0.0" y="223" width="374" height="56"/>
+                                    <searchBar contentMode="redraw" ambiguous="YES" text="검색어를 입력하세요" translatesAutoresizingMaskIntoConstraints="NO" id="jz4-sa-9fU">
+                                        <rect key="frame" x="0.0" y="225" width="468" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="tmD-O1-DwR"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="VBR-dJ-cVt"/>
                                         </connections>
                                     </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="jz4-sa-9fU" firstAttribute="centerX" secondItem="KUx-K8-TxA" secondAttribute="centerX" id="7f1-mx-Whv"/>
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="trailing" secondItem="nrK-xt-xCP" secondAttribute="trailing" id="D4b-7Y-pgC"/>
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="top" secondItem="KUx-K8-TxA" secondAttribute="top" constant="8" id="EN4-RF-tRg"/>
+                                    <constraint firstItem="jz4-sa-9fU" firstAttribute="top" secondItem="nrK-xt-xCP" secondAttribute="bottom" constant="20" id="J6E-Ea-gCm"/>
                                     <constraint firstItem="taa-4R-q3E" firstAttribute="centerX" secondItem="Ebz-Kq-gcK" secondAttribute="centerX" id="KAR-ag-mfH"/>
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="top" secondItem="KUx-K8-TxA" secondAttribute="top" constant="8" id="Mjx-es-hzW"/>
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="centerX" secondItem="KUx-K8-TxA" secondAttribute="centerX" id="Pbx-eB-fNx"/>
@@ -74,10 +76,8 @@
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="centerX" secondItem="KUx-K8-TxA" secondAttribute="centerX" id="SQd-Ko-oj1"/>
                                     <constraint firstItem="ggP-0Z-LRe" firstAttribute="top" secondItem="KUx-K8-TxA" secondAttribute="top" id="Tvd-JV-mDQ"/>
                                     <constraint firstItem="taa-4R-q3E" firstAttribute="centerY" secondItem="Ebz-Kq-gcK" secondAttribute="centerY" id="ZzZ-ef-8M3"/>
-                                    <constraint firstItem="dCK-yP-11Y" firstAttribute="top" secondItem="nrK-xt-xCP" secondAttribute="bottom" constant="18" id="aMo-cJ-Hlc"/>
                                     <constraint firstAttribute="height" constant="400" id="jSc-QT-gDO"/>
-                                    <constraint firstItem="Ebz-Kq-gcK" firstAttribute="top" secondItem="dCK-yP-11Y" secondAttribute="bottom" constant="20" id="lc5-bo-tcb"/>
-                                    <constraint firstItem="dCK-yP-11Y" firstAttribute="centerX" secondItem="KUx-K8-TxA" secondAttribute="centerX" id="n3T-sv-fVj"/>
+                                    <constraint firstItem="Ebz-Kq-gcK" firstAttribute="top" secondItem="jz4-sa-9fU" secondAttribute="bottom" constant="18" id="lXF-Hx-fVk"/>
                                     <constraint firstItem="nrK-xt-xCP" firstAttribute="top" secondItem="ggP-0Z-LRe" secondAttribute="bottom" constant="16" id="tax-5w-VMj"/>
                                     <constraint firstItem="Ebz-Kq-gcK" firstAttribute="centerX" secondItem="KUx-K8-TxA" secondAttribute="centerX" id="vuJ-eN-a7a"/>
                                 </constraints>
@@ -94,7 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="85j-XX-SA0"/>
                     <connections>
-                        <outlet property="UISearchBar" destination="dCK-yP-11Y" id="13W-hE-kif"/>
+                        <outlet property="UISearchBar" destination="jz4-sa-9fU" id="2Ol-gF-rtd"/>
                         <outlet property="searchBtn" destination="Ebz-Kq-gcK" id="8Lg-ua-9UC"/>
                         <outlet property="searchFileterSegment" destination="nrK-xt-xCP" id="HPf-R1-clh"/>
                         <outlet property="searchIndicator" destination="taa-4R-q3E" id="V48-iF-Ak9"/>

@@ -1,16 +1,20 @@
 PODS:
+  - Alamofire (5.6.4)
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 7536b2b0bc4a008b606a105394a50e76254fd785
+PODFILE CHECKSUM: 4714fd70cfdb5643979f50cd3c17d7fe0e8db411
 
 COCOAPODS: 1.11.3

@@ -7,6 +7,7 @@
 
 import UIKit
 import Toast_Swift
+import Alamofire
 
 class HomeVC: UIViewController, UISearchBarDelegate,UIGestureRecognizerDelegate {
 
@@ -152,6 +153,18 @@ class HomeVC: UIViewController, UISearchBarDelegate,UIGestureRecognizerDelegate 
     
     @IBAction func onSearchButtonClicked(_ sender: UIButton) {
         print("HomeVC - onSearchButtonClicked() called / selectedindex: \(searchFileterSegment.selectedSegmentIndex)")
+    
+        let url = API.BASE_URL + "search/photos"
+        
+        guard let userInput = self.UISearchBar.text else{return}
+        
+        //키, 밸류 형식의 딕셔너리
+        let queryParam = ["query" : userInput, "client_id" : API.CLIENT_ID] //query는 키고 뒤에는 값(밸류)임
+        
+        AF.request(url, method: .get, parameters: queryParam).responseJSON(completionHandler: {response in debugPrint(response)
+            
+        })
+        
         //화면으로 이동
         pushVC()
     }
